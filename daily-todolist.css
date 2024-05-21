@@ -1,0 +1,192 @@
+:root {
+  --color1: #0C0032; 
+  --color2: #190061;
+  --color3: #3500D3;
+  --color4: #282828;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1673526759319-57811d44b600?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 19px;
+  height: 100vh;
+ 
+}
+
+.main-container {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 450px;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.heading-container {
+  background-color: whitesmoke;
+  box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.382);
+  border-left: 10px solid #85A9FD;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 0;
+}
+
+.content-container {
+  font-family: Archivo;
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 20px;
+  max-height: 83%;
+  background-color: whitesmoke;
+  border-left: 10px solid #85A9FD;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.382);
+  overflow-y: auto;
+}
+
+.content-header {
+  background-color: rgba(245, 245, 245, 0.924);
+  padding-top: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.todo-input {
+  font-family: Lexend;
+  border: none;
+  height: 20px;
+  width: 85%;
+  padding: 0 7px;
+  background-color: transparent;
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent 89%, 
+    #85A9FD 89%,
+    #85A9FD 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.3s;
+}
+
+.todo-input::placeholder {
+  text-align: left;
+  font-family: Archivo;
+}
+
+.todo-input:focus {
+  outline: none;
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+
+.todo-enter {
+  height: 25px;
+  width: 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #85A9FD;
+  color: whitesmoke;
+  font-size: 17px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.todo-enter:hover {
+  cursor: pointer;
+  transform: translateY(2px);
+  transition: 0.3s;
+}
+
+.todo-enter i {
+  position: relative;
+  top: 1px;
+}
+
+.todo-list {
+  font-family: Lexend;
+  font-size: 14px;
+  padding: 0 10px 10px;
+}
+
+.task {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  background-image: linear-gradient(
+    #F4E5AA 0%,
+    #F4E5AA 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.left-span {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.finished {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+
+.line-through {
+  text-decoration: line-through red 2px;
+}
+
+.right-span {
+  user-select: none;
+}
+
+.right-span:hover {
+  cursor: pointer;
+}
+
+.edit-todo {
+  font-family: Lexend;
+  border: none;
+  padding: 2px 5px;
+  width: 280px;
+  background-color: whitesmoke;
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent 89%, 
+    #85A9FD 89%,
+    #85A9FD 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.3s;
+}
+
+.edit-todo::placeholder {
+  text-align: left;
+  font-family: Archivo;
+}
+
+.edit-todo:focus {
+  outline: none;
+  background-size: 100% 100%;
+  background-position-x: left;
+}
